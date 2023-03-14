@@ -1,0 +1,31 @@
+/* MOUNMENT FONT */
+@font-face {
+  font-family: mounmentRegular;
+  src: url("../font/Monument/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: mounmentBold;
+  src: url("../font/Monument/MonumentExtended-Ultrabold.otf");
+}
+/*  FONT AVNIR LT STD */
+@font-face {
+  font-family: avenirRegular;
+  src: url("../font/avenir-lt-std/Avenir-Light.otf");
+}
+@font-face {
+  font-family: aveniBold;
+  src: url("../font/avenir-lt-std/Avenir-Black.otf");
+}
+@font-face {
+  font-family: avenirBook;
+  src: url("../font/avenir-lt-std/Avenir-Book.otf");
+}
+@font-face {
+  font-family: avenirHeavy;
+  src: url("../font/avenir-lt-std/Avenir-Heavy.otf");
+}
+@font-face {
+  font-family: avenirOblique;
+  src: url("../font/avenir-lt-std/Avenir-Oblique.otf");
+}

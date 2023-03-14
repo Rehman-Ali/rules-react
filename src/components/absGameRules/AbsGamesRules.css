@@ -1,0 +1,109 @@
+.rules_wrapper {
+  margin-bottom: 20px;
+}
+.rules_img_wrapper {
+  width: 90px;
+  height: 80px;
+}
+.rules_defined {
+  width: 100%;
+  background: linear-gradient(
+    179.84deg,
+    rgba(24, 24, 24, 0.4) -1.99%,
+    rgba(24, 24, 24, 0.4) 79.51%
+  );
+  border-radius: 33px;
+  padding: 30px 20px;
+  border-radius: 10px;
+
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  /* overflow: hidden; */
+  transition: 1.5s;
+  color: white;
+  border: 1px solid #a18037;
+}
+.rules_defined h2 {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #8e6a27 -1.11%,
+    #a17e36 1.91%,
+    #c3a150 8.07%,
+    #dcba63 13.88%,
+    #ebca6f 19.15%,
+    #f0cf73 23.38%,
+    #e5c46a 31.88%,
+    #c7a653 46.98%,
+    #96752e 66.75%,
+    #7b5a19 76.71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0px;
+}
+.rules_defined p {
+  font-family: "Exo", sans-serif;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.rules_disp_wrapper {
+  visibility: hidden;
+  height: 0;
+  opacity: 0px;
+  background: linear-gradient(
+    179.84deg,
+    rgba(24, 24, 24, 0.4) -1.99%,
+    rgba(24, 24, 24, 0.4) 79.51%
+  );
+  transform: all 1s ease-in-out;
+  overflow: hidden;
+}
+.rules_defined:hover .rules_disp_wrapper {
+  border-radius: 20px;
+  visibility: visible;
+  opacity: 1;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  inset: 0;
+  top: 85px;
+  /* transition: all 0.5s ease-in-out; */
+  width: 100%;
+  z-index: 99999;
+  background: #161c23;
+  padding: 0px 20px;
+  border-left: 1px solid #a18037;
+  border-right: 1px solid #a18037;
+  border-bottom: 1px solid #a18037;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .rules_defined h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rules_wrapper {
+    margin-top: 20px;
+  }
+}

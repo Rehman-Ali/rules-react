@@ -1,0 +1,190 @@
+.playCardWrapper {
+  width: 140px;
+  height: auto;
+  margin-bottom: 5px;
+}
+.flip-card {
+  width: 100%;
+  height: 700px;
+  perspective: 1000px;
+  overflow: hidden !important;
+}
+.item-list:nth-child(1) .flip-card {
+  border: 2px solid #28bc10;
+  border-radius: 33px;
+}
+
+.item-list:nth-child(2) .flip-card {
+  border: 2px solid #2a5ada;
+  border-radius: 33px;
+}
+
+.item-list:nth-child(3) .flip-card {
+  border: 2px solid #b35cb2;
+  border-radius: 33px;
+}
+.item-list:nth-child(2) .flip-card-back h1,
+.item-list:nth-child(2) .flip-card-back .backDispcriptio {
+  color: #2a5ada;
+}
+.item-list:nth-child(3) .flip-card-back h1,
+.item-list:nth-child(3) .flip-card-back .backDispcriptio {
+  color: #b35cb2;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 30px 40px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    179.84deg,
+    rgba(24, 24, 24, 0.4) -1.99%,
+    rgba(24, 24, 24, 0.4) 79.51%
+  );
+  border-radius: 33px;
+  overflow: hidden !important;
+}
+/* .flip-card-front:nth-child(2) {
+  border: 2px solid #2a5ada !important;
+  border-radius: 33px;
+} */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  background-image: url("../../assets/images/cardbggg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 33px;
+}
+.step1 h4,
+.step2 h4,
+.step3 h4 {
+  font-family: mounmentBold;
+  background: linear-gradient(
+    180deg,
+    #8e6a27 -1.11%,
+    #a17e36 1.91%,
+    #c3a150 8.07%,
+    #dcba63 13.88%,
+    #ebca6f 19.15%,
+    #f0cf73 23.38%,
+    #e5c46a 31.88%,
+    #c7a653 46.98%,
+    #96752e 66.75%,
+    #7b5a19 76.71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+}
+.step1 p,
+.step2 p,
+.step3 p {
+  font-family: "Exo", sans-serif;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: justify;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.flip-card-front h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #28bc10;
+}
+.flip-card-back h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #28bc10;
+}
+.flip-card-back .backDispcriptio {
+  font-family: "Exo", sans-serif;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  padding-top: 10px;
+  color: #28bc10;
+}
+.step1 {
+  padding-top: 20px;
+}
+.step2 {
+  padding-top: 40px;
+}
+.step3 {
+  padding-top: 80px;
+}
+.item-list:nth-child(1) .flip-card-front {
+  background-image: url("../../assets/images/04.gif");
+}
+.item-list:nth-child(2) .flip-card-front {
+  background-image: url("../../assets/images/06.gif");
+}
+.item-list:nth-child(3) .flip-card-front {
+  background-image: url("../../assets/images/05.gif");
+}
+.item-list:nth-child(2) .flip-card-front h1 {
+  color: #2a5ada;
+}
+.item-list:nth-child(3) .flip-card-front h1 {
+  color: #b35cb2;
+}
+@media screen and (max-width: 1280px) {
+  .step3 {
+    padding-top: 20px;
+  }
+  .step2 {
+    padding-top: 20px;
+  }
+  .flip-card-front,
+  .flip-card-back {
+    padding: 30px 20px;
+  }
+}

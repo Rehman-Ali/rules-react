@@ -1,0 +1,198 @@
+.sidebar_wrapper {
+  position: fixed;
+  inset: 0;
+  background: #242834;
+  max-width: 350px;
+  top: 108px;
+  bottom: 0;
+  padding: 0px 35px;
+  padding-top: 50px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.links_section {
+  padding: 30px;
+  background: radial-gradient(
+    93.03% 93.03% at 49.85% 5.63%,
+    #333742 0%,
+    #2a2f3d 100%
+  );
+  box-shadow: 9px 0px 27px rgba(0, 0, 0, 0.2);
+  border-radius: 44px;
+  filter: drop-shadow(-2px 1px 15px rgba(172, 137, 62, 0.5));
+  margin-bottom: 40px;
+}
+.links_section a {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.links_section a img {
+  margin-right: 19px;
+}
+.links_section a:nth-child(3) {
+  margin-bottom: 0px !important;
+}
+.button_section {
+  margin-bottom: 20px;
+}
+.button_section button {
+  font-family: "Exo", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.button_section button img {
+  margin-right: 8px;
+}
+.button_section .crown {
+  background-image: url("../../assets/images/crownbg.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: contain;
+  background: linear-gradient(180deg, #28bc10 0%, rgba(40, 188, 16, 0.5) 100%);
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  opacity: 1;
+  color: white;
+  width: 100%;
+  border: none;
+}
+.button_section .sword {
+  background-image: url("../../assets/images/swordbgg.png") !important;
+  background: linear-gradient(180deg, #2a5ada 0%, rgba(42, 90, 218, 0.5) 100%);
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  color: white;
+  width: 100%;
+  border: none;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: contain;
+}
+.button_section .trophy {
+  background-image: url("../../assets/images/tophybgg.png") !important;
+  background: linear-gradient(180deg, #b35cb2 0%, rgba(179, 92, 178, 0.5) 100%);
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  opacity: 1;
+  color: white;
+  width: 100%;
+  border: none;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: contain;
+}
+.borderss {
+  background-image: linear-gradient(
+    180deg,
+    #8e6a27 -1.11%,
+    #a17e36 1.91%,
+    #c3a150 8.07%,
+    #dcba63 13.88%,
+    #ebca6f 19.15%,
+    #f0cf73 23.38%,
+    #e5c46a 31.88%,
+    #c7a653 46.98%,
+    #96752e 66.75%,
+    #7b5a19 76.71%
+  );
+  display: block;
+  width: 100%;
+  height: 1px;
+}
+.tabs_section p {
+  font-family: "Exo", sans-serif;
+  color: #ffffff;
+  padding: 20px 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+}
+.mobile_sidebar_hidden {
+  display: none;
+}
+@media screen and (max-width: 1280px) {
+  .sidebar_wrapper {
+    max-width: 300px;
+    padding: 0px 20px;
+    padding-top: 50px;
+  }
+  .links_section a {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .button_section button {
+    font-size: 13px;
+    padding: 10px 15px;
+    margin-top: 20px;
+  }
+  .crown span img,
+  .sword span img {
+    width: 50px;
+  }
+  .trophy span img {
+    width: 30px;
+  }
+  .tabs_section p {
+    padding: 20px 45px;
+    font-size: 16px;
+  }
+  .web_view,
+  .mobile_sidebar_hidden {
+    display: none;
+    animation: slide 0.5s forwards;
+    left: 50%;
+  }
+  .mobile_view_sidebar {
+    display: block;
+    z-index: 9999;
+    left: -50%;
+    animation: slide 0.5s forwards;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .web_view,
+  .mobile_sidebar_hidden {
+    display: none;
+    animation: slide 0.5s forwards;
+    left: 50%;
+  }
+  .mobile_view_sidebar {
+    display: block;
+    z-index: 9999;
+    left: -50%;
+    animation: slide 0.5s forwards;
+  }
+  .overlay {
+    background: #00000085;
+    inset: 0;
+    position: fixed;
+    z-index: 111111;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
