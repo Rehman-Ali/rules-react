@@ -43,24 +43,23 @@ const Sidebar = () => {
             <button className="crown">
               <span>
                 <img src={btnCrown} alt="crown" />
-              </span>{" "}
-              Kings of the ring{" "}
+              </span>
+              Kings of the ring
             </button>
             <button className="sword">
               <span>
                 <img src={sword} alt="crown" />
-              </span>{" "}
-              Clash of champions{" "}
+              </span>
+              Clash of champions
             </button>
             <button className="trophy">
               <span>
                 <img src={btntrophy} alt="crown" />
-              </span>{" "}
-              Grand Chelem{" "}
+              </span>
+              Grand Chelem
             </button>
           </div>
-          {/* <div className="borderss"></div> */}
-
+        
           {/*  buttons of sidebar ends here */}
 
           {/* tabs sections starts here */}
@@ -91,7 +90,6 @@ const Sidebar = () => {
               : "mobile_sidebar_hidden"
           }
         >
-          {/* <div className="overlay"></div> */}
           <div className="sidebar_content">
             {/* pages links sextion starts her */}
             <div className="links_section">
@@ -118,24 +116,23 @@ const Sidebar = () => {
               <button className="crown">
                 <span>
                   <img src={btnCrown} alt="crown" />
-                </span>{" "}
-                Kings of the ring{" "}
+                </span>
+                Kings of the ring
               </button>
               <button className="sword">
                 <span>
                   <img src={sword} alt="crown" />
-                </span>{" "}
-                Clash of champions{" "}
+                </span>
+                Clash of champions
               </button>
               <button className="trophy">
                 <span>
                   <img src={btntrophy} alt="crown" />
-                </span>{" "}
-                Grand Chelem{" "}
+                </span>
+                Grand Chelem
               </button>
             </div>
-            {/* <div className="borderss"></div> */}
-
+          
             {/*  buttons of sidebar ends here */}
 
             {/* tabs sections starts here */}

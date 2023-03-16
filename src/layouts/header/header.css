@@ -45,7 +45,7 @@ header {
 }
 .header_left_menu a,
 .header_right_menu a {
-  font-family: avenirRegular;
+  /* font-family: avenirRegular; */
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
