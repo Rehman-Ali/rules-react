@@ -96,14 +96,42 @@
   overflow: hidden;
   border-radius: 0px 0px 20px 20px;
 }
-
+@media screen and (max-width: 1800px) {
+  .rules_defined p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 @media screen and (max-width: 1280px) {
   .rules_defined h2 {
     font-size: 20px;
+  }
+  .rules_defined p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 768px) {
   .rules_wrapper {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .rules_defined h2 {
+    font-size: 16px;
+  }
+  .rules_defined:hover .rules_disp_wrapper {
+    height: 200px;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 365px) {
+  .rules_defined h2 {
+    font-size: 14px;
   }
 }

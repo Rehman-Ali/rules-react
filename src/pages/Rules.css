@@ -1,9 +1,9 @@
 .rule_page {
-  padding-top: 250px;
+  padding-top: 100px;
   background-color: #15202b;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 250px;
+  padding-bottom: 150px;
 }
 .rules_main_wrapper {
   margin-bottom: 20px;
@@ -18,9 +18,12 @@
   margin-top: 150px;
   text-align: center;
 }
+.rules_data_ {
+  margin: 48px 0px;
+}
 @media screen and (max-width: 1280px) {
   .rule_page {
-    padding: 200px 20px;
+    padding: 100px 20px;
   }
   .game_rules {
     margin-top: 100px;
@@ -28,7 +31,7 @@
 }
 @media screen and (max-width: 992px) {
   .rule_page {
-    padding: 150px 20px;
+    padding: 100px 20px;
   }
   .item-list {
     margin-bottom: 30px;
@@ -36,9 +39,18 @@
   .game_rules {
     margin-top: 40px;
   }
+  .rules_data_ {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 768px) {
   .rule_page {
     padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .rule_page {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -1,14 +1,9 @@
 .sidebar_wrapper {
-  position: fixed;
   inset: 0;
   background: #242834;
   max-width: 350px;
-  top: 108px;
-  bottom: 0;
   padding: 0px 35px;
-  padding-top: 50px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  padding-top: 250px;
 }
 .links_section {
   padding: 30px;
@@ -115,23 +110,65 @@
   width: 100%;
   height: 1px;
 }
-.tabs_section p {
-  font-family: "Exo", sans-serif;
-  color: #ffffff;
-  padding: 20px 50px;
+.tabs_section h6 {
+  margin-top: 20px;
   font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0px;
+  margin-bottom: 0px px;
+  padding-bottom: 25px;
 }
 .mobile_sidebar_hidden {
   display: none;
 }
+.button_section h6 {
+  margin-top: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.tabs_section button {
+  font-family: "Exo", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #bb9646;
+  background: #242834;
+  border-radius: 200px;
+  border: 1px solid #bb9646;
+  padding: 18px 0px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.tabs_section .my_dao {
+  font-family: "Exo", sans-serif;
+  background: linear-gradient(180deg, #f7d073 0%, #a88438 100%);
+  border-radius: 200px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #242834;
+}
 @media screen and (max-width: 1280px) {
+  .web_view,
+  .mobile_sidebar_hidden {
+    display: none;
+    animation: slide 0.5s forwards;
+    left: 50%;
+    position: fixed;
+    top: 108px;
+  }
+
   .sidebar_wrapper {
     max-width: 300px;
     padding: 0px 20px;
@@ -168,6 +205,10 @@
     z-index: 9999;
     left: -50%;
     animation: slide 0.5s forwards;
+    position: fixed;
+    top: 100px;
+    overflow: scroll;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -194,5 +235,15 @@
 @keyframes slide {
   100% {
     left: 0;
+  }
+}
+@media screen and (max-width: 330px) {
+  .mobile_view_sidebar {
+    top: 85px;
+  }
+}
+@media screen and (max-width: 270px) {
+  .mobile_view_sidebar {
+    top: 80px;
   }
 }

@@ -1,10 +1,12 @@
 header {
   background: #333742;
   box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
-  padding: 22px 50px;
+  padding: 22px 0px;
   z-index: 2;
   position: fixed;
   width: 100%;
+  padding-left: 95px;
+  padding-right: 50px;
 }
 .logo_image_wrapper {
   width: 115px;
@@ -48,7 +50,7 @@ header {
   /* font-family: avenirRegular; */
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
@@ -56,7 +58,7 @@ header {
 .profile_ {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 .profile_ .profile_icon {
   background: #9d8ac5;
@@ -73,8 +75,42 @@ header {
 .Pro .burger {
   display: none;
 }
-
+.header_left_menu,
+.header_right_menu {
+  padding: 0px 100px !important;
+}
+.header_right_menu {
+  padding-right: 80px !important;
+}
+@media screen and (max-width: 1570px) {
+  .header_left_menu,
+  .header_right_menu {
+    padding: 0px 70px !important;
+  }
+  .header_right_menu {
+    padding-right: 35px !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header {
+    padding-left: 75px;
+  }
+  .header_left_menu,
+  .header_right_menu {
+    padding: 0px 55px !important;
+  }
+  .profile_ .profile_icon {
+    background: #9d8ac5;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
 @media screen and (max-width: 1280px) {
+  .header_right_menu {
+    padding-right: 35px !important;
+  }
   .header_left_menu button,
   .header_right_menu button {
     font-size: 16px;
@@ -90,6 +126,7 @@ header {
   }
   header {
     padding: 22px 35px;
+    z-index: 9999999999;
   }
   .Pro {
     display: flex;
@@ -129,5 +166,23 @@ header {
   }
   .logo_image_wrapper {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  header {
+    padding: 22px;
+  }
+  .logo_image_wrapper {
+    width: 78px;
+  }
+  .profile_ .profile_icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 270px) {
+  .logo_image_wrapper {
+    width: 68px;
   }
 }

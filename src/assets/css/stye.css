@@ -5,13 +5,16 @@
 }
 
 @font-face {
-  font-family: mounmentBold;
+  font-family: "mounmentBold";
   src: url("../font/Monument/MonumentExtended-Ultrabold.otf");
 }
+
+
+
 /*  FONT AVNIR LT STD */
 @font-face {
   font-family: avenirRegular;
-  src: url("../font/avenir-lt-std/Avenir-Light.otf");
+  src: url("../font/AvenirNextLTPro-Regular.woff");
 }
 @font-face {
   font-family: aveniBold;

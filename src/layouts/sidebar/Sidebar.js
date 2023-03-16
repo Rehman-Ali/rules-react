@@ -40,32 +40,40 @@ const Sidebar = () => {
           {/*  buttons of sidebar starts here */}
 
           <div className="button_section">
+            <h6>Gaming Modes</h6>
             <button className="crown">
               <span>
                 <img src={btnCrown} alt="crown" />
-              </span>
-              Kings of the ring
+              </span>{" "}
+              Kings of the ring{" "}
             </button>
             <button className="sword">
               <span>
                 <img src={sword} alt="crown" />
-              </span>
-              Clash of champions
+              </span>{" "}
+              Clash of champions{" "}
             </button>
             <button className="trophy">
               <span>
                 <img src={btntrophy} alt="crown" />
-              </span>
-              Grand Chelem
+              </span>{" "}
+              Grand Chelem{" "}
             </button>
           </div>
-        
+          {/* <div className="borderss"></div> */}
+
           {/*  buttons of sidebar ends here */}
 
           {/* tabs sections starts here */}
           <div className="tabs_section">
             <div className="borderss"></div>
-            <p>KING OF THE RINGS leaderboard</p>
+            <h6>NFT Holders Space</h6>
+
+            <button>nft dahboard</button>
+            <button>sponsored pools</button>
+            <button className="my_dao">my dao team</button>
+
+            {/* <p>KING OF THE RINGS leaderboard</p>
             <div className="borderss"></div>
 
             <p>KING OF THE RING Game mode guideline</p>
@@ -74,7 +82,7 @@ const Sidebar = () => {
             <p>Sponsored Pools</p>
             <div className="borderss"></div>
 
-            <p>Learn about different leagues</p>
+            <p>Learn about different leagues</p> */}
           </div>
           {/* tabs sections ends here */}
         </div>
@@ -90,6 +98,7 @@ const Sidebar = () => {
               : "mobile_sidebar_hidden"
           }
         >
+          {/* <div className="overlay"></div> */}
           <div className="sidebar_content">
             {/* pages links sextion starts her */}
             <div className="links_section">
@@ -113,41 +122,38 @@ const Sidebar = () => {
             {/*  buttons of sidebar starts here */}
 
             <div className="button_section">
+              <h6>Gaming Modes</h6>
               <button className="crown">
                 <span>
                   <img src={btnCrown} alt="crown" />
-                </span>
-                Kings of the ring
+                </span>{" "}
+                Kings of the ring{" "}
               </button>
               <button className="sword">
                 <span>
                   <img src={sword} alt="crown" />
-                </span>
-                Clash of champions
+                </span>{" "}
+                Clash of champions{" "}
               </button>
               <button className="trophy">
                 <span>
                   <img src={btntrophy} alt="crown" />
-                </span>
-                Grand Chelem
+                </span>{" "}
+                Grand Chelem{" "}
               </button>
             </div>
-          
+            {/* <div className="borderss"></div> */}
+
             {/*  buttons of sidebar ends here */}
 
             {/* tabs sections starts here */}
             <div className="tabs_section">
               <div className="borderss"></div>
-              <p>KING OF THE RINGS leaderboard</p>
-              <div className="borderss"></div>
+              <h6>NFT Holders Space</h6>
 
-              <p>KING OF THE RING Game mode guideline</p>
-              <div className="borderss"></div>
-
-              <p>Sponsored Pools</p>
-              <div className="borderss"></div>
-
-              <p>Learn about different leagues</p>
+              <button>nft dahboard</button>
+              <button>sponsored pools</button>
+              <button className="my_dao">my dao team</button>
             </div>
             {/* tabs sections ends here */}
           </div>

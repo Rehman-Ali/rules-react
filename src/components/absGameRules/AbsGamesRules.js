@@ -1,7 +1,7 @@
 import React from "react"
 import "./AbsGamesRules.css"
 const AbsGamesRules = (props) => {
-  const { rulesimage, heading, para, para2, para3 } = props
+  const { rulesimage, heading, para, para2, para3, para4, para5 } = props
   return (
     <>
       <div className="rules_wrapper">
@@ -14,6 +14,8 @@ const AbsGamesRules = (props) => {
             <p>{para}</p>
             <p>{para2}</p>
             <p>{para3}</p>
+            <p>{para4}</p>
+            <p>{para5}</p>
           </div>
         </div>
       </div>

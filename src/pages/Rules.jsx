@@ -51,7 +51,7 @@ const Rules = () => {
       stepPara: "CHOOSE YOUR LEAGUE",
       stepHeading2: "step 2",
       stepPara2:
-        "PICK UP YOUR BET FOR THE EVENT(S). IT COULD BE TEAM A AS A WINNNER, A DRAW OR TEAM B AS A WINNER (I.E. SOCCER, BASKETBALL, ETC).  THIS SELECTION IS MULTIPLE THROUGH MULTIPLE LIVE EVENTS (IE. DAY X OF THE NBA PLAYOFFS)",
+        "PICK UP YOUR BET FOR THE EVENT(S). YOU HAVE TO PICK SEVERAL TEAMS OR INDIVIDUALS ON WHICH APPLY EITHER A HANDICAP OR BONUS FACTOR OR NEITHER BONUS NOR HANDICAP FACTOR",
       stepHeading3: "step 3",
       stepPara3:
         "Validate your registration into the pool; by  signing the transaction into your wallet",
@@ -66,6 +66,8 @@ const Rules = () => {
         "10% of the registration fee before the launch of the event, or first of the Series,",
       para3:
         "50% of the registration fee after the first event (for series),75% of the registration fee after the second event,",
+      para4: "75% of the registration fee after the second event,",
+      para5: "100% after the start of the third event.",
     },
     {
       rulesimage: payout,
@@ -93,11 +95,18 @@ const Rules = () => {
         "You don’t need to have the perfect bet but just beat your peers in the pool to win the first prize or to split the pot with the other winners (for the 1D2 simple pools game mode).",
       para3:
         "For the Clash of Champions tournament pools, for each good bet you make you earn 1 point. All the points are aggregating after each live event. The people with the most point at the end of the tournament split the prize pot according to the payout structure.",
+      para4:
+        "For the Grand Chelem series tournament pools, for each good bet you make you earn x points according to the real event/sport calculation mode + the potential handicap or bonus factor. All the points are aggregating after each live event and accumulating for the whole period of the series. The people with the most point at the end of the series split the prize pot according to the payout structure.",
     },
   ])
   return (
     <section className="rule_page">
       <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-12">
+            <AbsDiv />
+          </div>
+        </div>
         <div className="row">
           <div className="col-12">
             <div className="how_to_play_area ">
@@ -105,7 +114,7 @@ const Rules = () => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row align-items-center">
           {cardData.map((e, idx) => {
             return (
               <div className="col-lg-4 col-md-6 col-sm-12  item-list" key={idx}>
@@ -116,25 +125,41 @@ const Rules = () => {
         </div>
         <div className="row">
           <div className="col-lg-12">
+            <AbsDiv />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-lg-12">
             <div className="game_rules ">
               <AbsHeading heading="Game Rules" />
             </div>
           </div>
         </div>
-        <div className="row my-5">
+        <div className="row rules_data_">
           {rulesData.map((e, idx) => {
             return (
-              <div className="col-lg-6 col-md-6 col-sm-12 rules_main_wrapper" key={idx}>
+              <div
+                className="col-lg-6 col-md-6 col-sm-12 rules_main_wrapper"
+                key={idx}
+              >
                 <AbsGamesRules
                   rulesimage={e.rulesimage}
                   heading={e.heading}
                   para={e.para}
                   para2={e.para2}
                   para3={e.para3}
+                  para4={e.para4}
+                  para5={e.para5}
                 />
               </div>
             )
           })}
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <AbsDiv />
+          </div>
         </div>
       </div>
     </section>
