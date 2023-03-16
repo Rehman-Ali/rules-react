@@ -55,6 +55,10 @@ header {
   line-height: 22px;
   color: #ffffff;
 }
+.header_left_menu a:hover,
+.header_right_menu a:hover {
+  color: #f7d073;
+}
 .profile_ {
   display: flex;
   align-items: center;

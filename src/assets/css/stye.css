@@ -9,12 +9,10 @@
   src: url("../font/Monument/MonumentExtended-Ultrabold.otf");
 }
 
-
-
 /*  FONT AVNIR LT STD */
 @font-face {
   font-family: avenirRegular;
-  src: url("../font/AvenirNextLTPro-Regular.woff");
+  src: url("../font/Fonts/AvenirLTStd-Book.otf");
 }
 @font-face {
   font-family: aveniBold;

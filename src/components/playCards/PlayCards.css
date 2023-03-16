@@ -142,6 +142,7 @@
   line-height: 29px;
   letter-spacing: 0.05em;
   color: #28bc10;
+  text-transform: uppercase;
 }
 .flip-card-back .backDispcriptio {
   font-family: "Exo", sans-serif;

@@ -3,7 +3,10 @@
   background: #242834;
   max-width: 350px;
   padding: 0px 35px;
-  padding-top: 250px;
+  padding-top: 400px;
+}
+button.trophy span {
+  margin-right: 10px;
 }
 .links_section {
   padding: 30px;
@@ -28,6 +31,9 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+.links_section a:hover {
+  color: #f7d073;
 }
 .links_section a img {
   margin-right: 19px;

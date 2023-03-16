@@ -110,7 +110,7 @@ const Rules = () => {
         <div className="row">
           <div className="col-12">
             <div className="how_to_play_area ">
-              <AbsHeading heading="How to play" />
+              <AbsHeading heading="How to play  ?" />
             </div>
           </div>
         </div>
