@@ -247,6 +247,9 @@
   .flip-card {
     height: 585px;
   }
+  .step1 {
+    height: 168px;
+  }
   .step3 {
     padding-top: 20px;
   }
@@ -306,6 +309,11 @@
   }
 }
 @media screen and (max-width: 460px) {
+  .flip-card-front h1,
+  .flip-card-back h1 {
+    font-size: 18px;
+    line-height: 15px;
+  }
   .step2 {
     padding-top: 20px;
   }
