@@ -20,13 +20,12 @@ const Rules = () => {
       backsideDisp: "Simple event pools: 1D2 game mode",
       stepHeading: "step 1",
       stepPara:
-        "Choose your League aka, the amount of ETH you are ready to risk on your wager. The lower the bet, the more competition in the pool.",
+        "CHOOSE YOUR LEAGUE BASED ON THE AMOUNT OF ETH YOU ARE READY TO RISK ON YOUR WAGER. THE LOWER THE BET, THE MORE COMPETITORS IN THE POOL.",
       stepHeading2: "step 2",
       stepPara2:
-        "Pick up your bet for the event. It could be team A as a winner, a draw or team B as a winner (i.e. soccer, basketball, football etc.)",
+        "PLACE YOUR BET FOR THE EVENT. SOME EVENTS WILL HAVE TWO OPTIONS, OTHER EVENTS WILL HAVE A THIRD OPTION (A DRAW, FOR INSTANCE).",
       stepHeading3: "step 3",
-      stepPara3:
-        "Validate your registration into the pool by signing the transaction into your wallet.s",
+      stepPara3: "VALIDATE YOUR BET.",
     },
     {
       icon: cardsword,
@@ -34,13 +33,12 @@ const Rules = () => {
       backsideHeading: "clash of champions",
       backsideDisp: "Simple/Multiple event pools: tournament 1D2 game mode",
       stepHeading: "step 1",
-      stepPara: "CHOOSE YOUR LEAGUE",
+      stepPara: "CHOOSE YOUR LEAGUE.",
       stepHeading2: "step 2",
       stepPara2:
-        "PICK UP YOUR BET FOR THE EVENT(S). IT COULD BE TEAM A AS A WINNNER, A DRAW OR TEAM B AS A WINNER (I.E. SOCCER, BASKETBALL, ETC).  THIS SELECTION IS MULTIPLE THROUGH MULTIPLE LIVE EVENTS (IE. DAY X OF THE NBA PLAYOFFS)",
+        "PLACE YOUR BET FOR THE EVENT. IN OUR CLASH OF CHAMPIONS MODE, BETTORS PLACE MULTIPLE BETS FOR A GIVEN EVENT/EVENTS.",
       stepHeading3: "step 3",
-      stepPara3:
-        "Validate your registration into the pool; by  signing the transaction into your wallet",
+      stepPara3: "VALIDATE YOUR BET.",
     },
     {
       icon: cardtrophy,
@@ -48,55 +46,55 @@ const Rules = () => {
       backsideHeading: "GRAND CHELEM",
       backsideDisp: "Series multiple event pools: tournament custom game mode",
       stepHeading: "step 1",
-      stepPara: "CHOOSE YOUR LEAGUE",
+      stepPara: "CHOOSE YOUR LEAGUE.",
       stepHeading2: "step 2",
       stepPara2:
-        "PICK UP YOUR BET FOR THE EVENT(S). YOU HAVE TO PICK SEVERAL TEAMS OR INDIVIDUALS ON WHICH APPLY EITHER A HANDICAP OR BONUS FACTOR OR NEITHER BONUS NOR HANDICAP FACTOR",
+        "PLACE YOUR BET FOR THE EVENT. IN OUR GRAND CHELEM (SLAM) MODE, BETTORS MAKE PICKS THAT 'RUN' FOR THE ENTIRE LENGTH OF THE TOURNAMENT.",
       stepHeading3: "step 3",
-      stepPara3:
-        "Validate your registration into the pool; by  signing the transaction into your wallet",
+      stepPara3: "VALIDATE YOUR BET.",
     },
   ])
   const [rulesData, setRuleData] = useState([
     {
       rulesimage: frofeit,
       heading: "forfeit",
-      para: "Any user can decide to stop his participation before the live event starts (the pool will be automatically locked via Smart Contract) or during the Series through withdrawing his bet, but will forfeit:",
+      para: "Any user can decide to stop their participation before the live event starts (the pool will be automatically locked via Smart Contract) or during the event through withdrawing their bet, but will forfeit:",
       para2:
-        "10% of the registration fee before the launch of the event, or first of the Series,",
+        "10% of the registration fee before the launch of the event, or first event of the series,",
       para3:
-        "50% of the registration fee after the first event (for series),75% of the registration fee after the second event,",
-      para4: "75% of the registration fee after the second event,",
+        "50% of the registration fee after the first event (for series pools),",
+      para4:
+        "75% of the registration fee after the second event (for series pools),",
       para5: "100% after the start of the third event.",
     },
     {
       rulesimage: payout,
       heading: "payouts structure",
-      para: "According to the number of participants in each pool, the payout structure will evolve accordingly.",
+      para: "According to the number of participants in each pool, the payout structure will work as follows.",
       para2:
-        "For King of the Ring pools, the winners take it all. As there is three different bets possible in the pool as 1, D or 2, the players who wagered right will earn and split equally the other players’ wagers.",
+        "For King of the Ring pools, the winners take all. As there are up to three different bets possible in a given pool, the players who wagered correctly will earn and split equally the pool winnings.",
       para3:
-        "For the two other game modes, there will be a ranking among players, either over 1 or several events, and the prize pool will be split from 1 up to 2,000 players depending on the total number of the players in this pool.",
+        "For the two other game modes (Clash of Champions and Grand Chelem), there will be a ranking among players, either over one or several events, and the prize pool will be split from 1 up to 1,500 players depending on the total number of the players in pool for a given league.",
     },
     {
       rulesimage: resutls,
       heading: "RESULTS RECONCILIATION PERIOD",
-      para: "During Alpha & Beta versions of the platform, this operation will be centralized (Manual) in order to be able to secure and build a robust blockchain infrastructure to guarantee the safety of the players’ funds. For Alpha & Beta versions of the platform, this period will be within 48h after the end of the event (or last event for a series). ",
+      para: "During Alpha & Beta versions of the platform, wager reconciliation will be centralized (manual) in order to secure and build a robust blockchain infrastructure to guarantee the safety of the players’ funds. For Alpha & Beta versions of the platform, this period will be within forty-eight hours after the conclusion of the event (or last event for a series).  ",
       para2:
-        "The DAO team will work to reduce this period to a 12h window after the implementation of oracles (automation of on chain pulling of data). The reconciliation process will be then semi-automated.",
+        "The Defi All Odds team will work quickly to reduce this period to a twelve-hour window after the implementation of oracles (automation of data pulling). The reconciliation process will then be semi-automated.",
       para3:
-        "After couple months of semi-automated reconciliation system, DAO team aims to fully automates as 100% decentralized the process thus, the platform will provide, almost instantly after the final result of the live event, the winning prizes available for players into their personal dashboard.",
+        "After stress-testing the semi-automated reconciliation system (estimated to be a few months in length), the DAO team aims to fully automate the reconciliation process, allowing the platform to provide, almost instantly after the final result of the live event, the winning prizes for players on their personal dashboard",
     },
     {
       rulesimage: badge,
       heading: "HOW TO WIN?",
       para: "No algorithm or shady tricks to manipulate odds. You play against other players! ",
       para2:
-        "You don’t need to have the perfect bet but just beat your peers in the pool to win the first prize or to split the pot with the other winners (for the 1D2 simple pools game mode).",
+        "You don’t need to have the perfect bet structure; simply beat your peers in the pool to win the first prize (for Clash of Champions and Grand Chelem) or to split the pot with the other winners (for King of the Ring).",
       para3:
-        "For the Clash of Champions tournament pools, for each good bet you make you earn 1 point. All the points are aggregating after each live event. The people with the most point at the end of the tournament split the prize pot according to the payout structure.",
+        "For the Clash of Champions tournament pools, for each correct wager you make you earn one point. All the points are aggregated after each live event. The bettors with the most points at the end of the event will split the prize pot according to the payout structure.",
       para4:
-        "For the Grand Chelem series tournament pools, for each good bet you make you earn x points according to the real event/sport calculation mode + the potential handicap or bonus factor. All the points are aggregating after each live event and accumulating for the whole period of the series. The people with the most point at the end of the series split the prize pot according to the payout structure.",
+        "For the Grand Chelem series tournament pools, for each good bet you make you earn x points according to the real event/sport calculation mode plus the potential handicap or bonus factor. All the points are aggregated after each live event and accumulate for the whole period of the series. The bettors with the most points at the end of the series split the prize pot according to the payout structure.",
     },
   ])
   return (

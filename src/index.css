@@ -1,13 +1,34 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@font-face {
+  font-family: avenirRegular;
+  src: url("../src/assets/font/Avenir_Font/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: avenirBold;
+  src: url("../src/assets/font/Avenir_Font/AvenirLTStd-Black.otf");
+}
+@font-face {
+  font-family: avenirRoman;
+  src: url("../src/assets/font/Avenir_Font/AvenirLTStd-Roman.otf");
+}
+@font-face {
+  font-family: mounmentRegular;
+  src: url("../src/assets/font/Monument/MonumentExtended-Regular.otf");
+}
+@font-face {
+  font-family: mounmentBold;
+  src: url("../src/assets/font/Monument/MonumentExtended-Ultrabold.otf");
 }

@@ -31,6 +31,13 @@
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 460px) {
+  .headingss {
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 40px;
+  }
+}
 
 @media screen and (max-width: 350px) {
   .headingss {

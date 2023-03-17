@@ -47,7 +47,7 @@ header {
 }
 .header_left_menu a,
 .header_right_menu a {
-  /* font-family: avenirRegular; */
+  font-family: avenirRegular;
   text-decoration: none;
   font-style: normal;
   font-weight: 300;
@@ -112,6 +112,9 @@ header {
   }
 }
 @media screen and (max-width: 1280px) {
+  .Pro .burger {
+    cursor: pointer;
+  }
   .header_right_menu {
     padding-right: 35px !important;
   }
@@ -145,6 +148,14 @@ header {
     color: white;
   }
 }
+@media screen and (max-width: 1100px) {
+  .header_left_menu {
+    padding-right: 10px !important;
+  }
+  .header_right_menu {
+    padding-left: 10px !important;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header_left_menu,
   .header_right_menu {
@@ -171,12 +182,12 @@ header {
   .logo_image_wrapper {
     width: 100px;
   }
+  header {
+    padding: 22px 15px !important;
+  }
 }
 
 @media screen and (max-width: 330px) {
-  header {
-    padding: 22px;
-  }
   .logo_image_wrapper {
     width: 78px;
   }

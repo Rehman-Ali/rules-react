@@ -33,7 +33,7 @@
 @media screen and (max-width: 576px) {
   .abs_div {
     height: 75px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .abs_div h1 {
     font-size: 30px;
